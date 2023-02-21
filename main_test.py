@@ -19,7 +19,7 @@ def test_main_1():
     # regex_string = r'[\w,\W]*' + str(minval) + r'[\w,\W]*'
     # res = re.search(regex_string, lines[0])
     regex_string = r'[\w,\W]*30[\w,\W]*'
-    res = re.search(regex_string, lines[0])
+    res = re.search(regex_string, lines[2])
     assert res != None
     print(res.group())
 
@@ -39,6 +39,6 @@ def test_main_2():
     # regex_string = r'[\w,\W]*' + str(minval) + r'[\w,\W]*'
     # res = re.search(regex_string, lines[0])
     regex_string = r'[\w,\W]*100[\w,\W]*'
-    res = re.search(regex_string, lines[0])
+    res = re.search(regex_string, lines[2])
     assert res != None
     print(res.group())
