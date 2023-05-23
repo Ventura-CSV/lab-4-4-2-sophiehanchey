@@ -45,3 +45,16 @@ def test_main_2():
     # res = re.search(regex_string, lines[2])
     # assert res != None
     # print(res.group())
+
+
+def test_main_3():
+
+    flag = False
+    with open('main.py') as f:
+        for line in f:
+            print(line.rstrip('\n'))
+            if 'try' in line:
+                flag = True
+                break
+
+    assert flag == True, 'Need to use try statement '
