@@ -1,13 +1,15 @@
 def main():
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-
-    ########################################
-    # Do not delete the return statement
-    ########################################
+    
+    while True:
+        try:
+            number = int(input('Please enter a numerical value: '))
+        except:
+            print('invalid input: Value Error')
+            continue
+        else:
+            print(number)
+            break
+    
     return number
 
 
